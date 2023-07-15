@@ -13,7 +13,6 @@ export default function Cv(){
     ]
     return(
         <>
-        <div className="flex flex-col gap-5">
             {data.map((d)=>(
                 <>
                 <div
@@ -43,7 +42,6 @@ export default function Cv(){
                 </div>
                 </>
             ))}
-        </div>       
         </>
     )
 }
