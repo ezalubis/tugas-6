@@ -10,7 +10,7 @@ export default function Home(){
                 <img src={ff} className="my-5 rounded-lg"/>
                 </div>
                 <div className="p-20 flex flex-col gap-2">
-                    <p>Hello there</p>
+                    <h1 className="text-4xl font-bold">Hello there</h1>
                     <h1 className="text-4xl font-bold">My Name Is Azhari Fahreza Lubis</h1>
                     <h2 className="text-2xl font-bold">Junior Backend And Frontend Developer</h2>
                     <p>I am a student at PASIM Bandung National University, I am studying D3 Management

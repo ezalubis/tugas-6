@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
+import Theme from "./Theme";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { MdOutlineDashboard } from "react-icons/md";
+import {MdOutlineDashboard } from "react-icons/md";
 import {  AiOutlineUser } from "react-icons/ai";
 import {  FiMessageSquare,} from "react-icons/fi";
 
@@ -9,10 +10,11 @@ export default function Sidebar() {
   const menus = [
     { name: "Home", link: "/", icon: MdOutlineDashboard },
     { name: "Projects", link: "/Projects", icon:  FiMessageSquare },
-    { name: "CV", link: "/Cv", icon: AiOutlineUser }
+    { name: "CV", link: "/Cv", icon: AiOutlineUser },
   ];
   
   const [open, setOpen] = useState(false);
+
 
   return (
     <>
@@ -32,6 +34,8 @@ export default function Sidebar() {
               className="cursor-pointer"
               onClick={() => setOpen(!open)}
             />
+            <br />
+            <Theme/>
           </div>
           <div className={`pt-4 text-white flex flex-col gap-4 relative`}>
             {menus.map((elem, ind) => {

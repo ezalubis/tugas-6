@@ -12,36 +12,25 @@ export default function Cv(){
         },
     ]
     return(
-        <>
-            {data.map((d)=>(
-                <>
-                <div
-                className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                <div
-                    className="relative overflow-hidden bg-cover bg-no-repeat"
-                    data-te-ripple-init
-                    data-te-ripple-color="light">
-                    <img
-                    className="rounded-t-lg"
-                    src={d.img}
-                    alt="" />
-                    <a href="https://github.com/ezalubis">
-                    <div
-                        className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+        <div className="flex gap-20">
+        {data.map((d)=>(
+            <>
+                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img className="rounded-t-lg" src={d.img} alt="" />
                     </a>
-                </div>
-                    <div className="p-6">
-                        <h5
-                        className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                        {d.judul}
-                        </h5>
-                        <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        {d.des}
-                        </p>
+                    <div className="p-5">
+                        <a href="#">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                        </a>
+                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                        </a>
                     </div>
                 </div>
-                </>
-            ))}
-        </>
+            </>
+        ))}
+        </div>
     )
 }
