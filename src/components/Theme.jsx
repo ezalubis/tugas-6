@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 export default function Theme() {
     const {tema,setTema} = useContext(Tema);
-    const [mode, setMode] = useState(false);
+    const [mode, setMode] = useState(true);
 
     useEffect(()=>{
         console.log(`Berhasil Ke Mode ${tema}`);
