@@ -5,6 +5,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import {MdOutlineDashboard } from "react-icons/md";
 import {  AiOutlineUser } from "react-icons/ai";
 import {  FiMessageSquare,} from "react-icons/fi";
+import ScrollButton from "./ScrollButton";
 
 export default function Sidebar() {
   const menus = [
@@ -35,9 +36,10 @@ export default function Sidebar() {
               onClick={() => setOpen(!open)}
             />
             <br />
-            <Theme/>
+            <ScrollButton />
           </div>
           <div className={`pt-4 text-white flex flex-col gap-4 relative`}>
+          <Theme/>
             {menus.map((elem, ind) => {
               return (
                 <Link
